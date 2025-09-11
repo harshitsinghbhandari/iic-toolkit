@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IIT Bombay Institute Innovation Toolkit</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__content">
+                <h1 class="header__title">IIT Bombay Institute Innovation Toolkit</h1>
+                <p class="header__subtitle">Your Complete Guide to Entrepreneurship Resources at IIT Bombay</p>
+            </div>
+        </div>
+    </header>
+
+    <nav class="navigation">
+        <div class="container">
+            <div class="nav__content">
+                <button class="nav__item active" data-section="home">Home</button>
+                <button class="nav__item" data-section="discover">Discover</button>
+                <button class="nav__item" data-section="foundation">Foundation</button>
+                <button class="nav__item" data-section="development">Development</button>
+                <button class="nav__item" data-section="scaling">Scaling</button>
+                <button class="nav__item" data-section="community">Community</button>
+            </div>
+            <div class="progress-bar">
+                <div class="progress-fill" id="progressFill"></div>
+            </div>
+        </div>
+    </nav>
+
+    <main class="main">
+        <!-- Home Section -->
+        <section class="section active" id="home">
+            <div class="container">
+                <div class="home__intro">
+                    <h2>Welcome to Your Entrepreneurship Journey</h2>
+                    <p class="intro-text">
+                        This comprehensive toolkit provides access to all entrepreneurship resources available at IIT Bombay. 
+                        Whether you're a curious freshman or a seasoned innovator, find your path through our structured 
+                        5-section framework designed to support you from idea discovery to venture scaling.
+                    </p>
+                </div>
+
+                <div class="framework-image">
+                    <img src="https://ppl-ai-code-interpreter-files.s3.amazonaws.com/web/direct-files/185144cc47ab362c1b3ce2969c049bd8/6dc32c05-6ff8-49eb-bada-a4fbc8198466/50b640ca.png" alt="Innovation Toolkit Framework" class="framework-diagram">
+                </div>
+
+                <div class="quick-start">
+                    <h3>Quick Start Options</h3>
+                    <div class="start-options">
+                        <div class="option-card">
+                            <h4>Take Assessment</h4>
+                            <p>Find your recommended starting point</p>
+                            <button class="btn btn--primary" onclick="startAssessment()">Start Assessment</button>
+                        </div>
+                        <div class="option-card">
+                            <h4>Explore Sections</h4>
+                            <p>Navigate through all five core areas</p>
+                            <button class="btn btn--secondary" onclick="showSection('discover')">Begin Journey</button>
+                        </div>
+                        <div class="option-card">
+                            <h4>Search Resources</h4>
+                            <p>Find specific programs or facilities</p>
+                            <button class="btn btn--outline" onclick="focusSearch()">Search Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="success-stories">
+                    <h3>Success Stories</h3>
+                    <div class="stories-carousel" id="storiesCarousel">
+                        <div class="story-card active">
+                            <h4>Gupshup</h4>
+                            <p>First unicorn from an academic incubation ecosystem</p>
+                            <span class="founder">- Beerud Sheth</span>
+                        </div>
+                        <div class="story-card">
+                            <h4>ideaForge</h4>
+                            <p>Leading drone manufacturing company that went public</p>
+                            <span class="founder">- Ankit Mehta</span>
+                        </div>
+                        <div class="story-card">
+                            <h4>ImmunoACT</h4>
+                            <p>Pioneering indigenous cancer therapy solutions</p>
+                            <span class="founder">- Dr. Rahul Purwar</span>
+                        </div>
+                    </div>
+                    <div class="carousel-controls">
+                        <button class="carousel-btn" onclick="previousStory()">‹</button>
+                        <button class="carousel-btn" onclick="nextStory()">›</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Template (will be populated by JavaScript) -->
+        <section class="section" id="discover">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Discover Your Path</h2>
+                    <p class="section-description">Entry point for new students to explore entrepreneurship opportunities</p>
+                    <p class="target-audience">Target: Freshers and curious students</p>
+                </div>
+                <div class="resources-container" id="discoverResources"></div>
+            </div>
+        </section>
+
+        <section class="section" id="foundation">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Build Your Foundation</h2>
+                    <p class="section-description">Develop fundamental skills and knowledge for entrepreneurship</p>
+                    <p class="target-audience">Target: Students ready to learn entrepreneurship fundamentals</p>
+                </div>
+                <div class="resources-container" id="foundationResources"></div>
+            </div>
+        </section>
+
+        <section class="section" id="development">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Develop Your Ideas</h2>
+                    <p class="section-description">Transform ideas into viable proof-of-concepts and prototypes</p>
+                    <p class="target-audience">Target: Students with ideas ready for development</p>
+                </div>
+                <div class="resources-container" id="developmentResources"></div>
+            </div>
+        </section>
+
+        <section class="section" id="scaling">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Scale Your Venture</h2>
+                    <p class="section-description">Professional incubation and business scaling support</p>
+                    <p class="target-audience">Target: Startups ready for incubation and investment</p>
+                </div>
+                <div class="resources-container" id="scalingResources"></div>
+            </div>
+        </section>
+
+        <section class="section" id="community">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Connect & Grow</h2>
+                    <p class="section-description">Long-term community support and network building</p>
+                    <p class="target-audience">Target: All entrepreneurs at any stage</p>
+                </div>
+                <div class="resources-container" id="communityResources"></div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Search and Filter Controls -->
+    <div class="search-controls">
+        <div class="container">
+            <div class="search-bar">
+                <input type="text" id="searchInput" placeholder="Search resources..." class="form-control">
+                <button class="btn btn--primary" onclick="searchResources()">Search</button>
+            </div>
+            <div class="filter-controls">
+                <label>Filter by type:</label>
+                <select id="typeFilter" class="form-control" onchange="filterResources()">
+                    <option value="">All Types</option>
+                    <option value="awareness">Awareness</option>
+                    <option value="course">Course</option>
+                    <option value="workshop">Workshop</option>
+                    <option value="program">Program</option>
+                    <option value="facility">Facility</option>
+                    <option value="competition">Competition</option>
+                    <option value="incubation">Incubation</option>
+                    <option value="funding">Funding</option>
+                    <option value="mentorship">Mentorship</option>
+                    <option value="network">Network</option>
+                    <option value="research">Research</option>
+                    <option value="partnership">Partnership</option>
+                </select>
+            </div>
+        </div>
+    </div>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFAQ(0)">
+                        Who can access these entrepreneurship resources?
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>All current IIT Bombay students, faculty, and in some cases, alumni can access these resources. Specific eligibility varies by program.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFAQ(1)">
+                        How do I know which section to start with?
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Take our quick assessment tool to get personalized recommendations, or start with 'Discover Your Path' if you're new to entrepreneurship.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFAQ(2)">
+                        Are there any costs involved?
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Most resources are free for IIT Bombay students. Some advanced programs may have nominal fees, but financial support is often available.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFAQ(3)">
+                        Can I access multiple programs simultaneously?
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes, many students participate in multiple programs. The toolkit helps you coordinate and sequence your involvement optimally.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Assessment Modal -->
+    <div class="modal hidden" id="assessmentModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Quick Assessment</h3>
+                <button class="modal-close" onclick="closeAssessment()">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="assessment-content">
+                    <p>Answer these quick questions to get your personalized recommendation:</p>
+                    <div class="question">
+                        <p><strong>1. What's your current academic year?</strong></p>
+                        <div class="options">
+                            <label><input type="radio" name="year" value="fresh"> First Year</label>
+                            <label><input type="radio" name="year" value="mid"> Second/Third Year</label>
+                            <label><input type="radio" name="year" value="final"> Final Year</label>
+                        </div>
+                    </div>
+                    <div class="question">
+                        <p><strong>2. Do you have a business idea?</strong></p>
+                        <div class="options">
+                            <label><input type="radio" name="idea" value="none"> No idea yet</label>
+                            <label><input type="radio" name="idea" value="vague"> Vague concept</label>
+                            <label><input type="radio" name="idea" value="clear"> Clear idea</label>
+                            <label><input type="radio" name="idea" value="prototype"> Have prototype</label>
+                        </div>
+                    </div>
+                    <div class="question">
+                        <p><strong>3. Your entrepreneurship experience?</strong></p>
+                        <div class="options">
+                            <label><input type="radio" name="experience" value="none"> Complete beginner</label>
+                            <label><input type="radio" name="experience" value="some"> Some exposure</label>
+                            <label><input type="radio" name="experience" value="experienced"> Previous ventures</label>
+                        </div>
+                    </div>
+                </div>
+                <button class="btn btn--primary" onclick="getRecommendation()">Get Recommendation</button>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Contact Support</h4>
+                    <p>For queries about the Innovation Toolkit:</p>
+                    <p>Email: toolkit@iitb.ac.in</p>
+                    <p>Phone: +91-22-2576-xxxx</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="https://ppl-ai-code-interpreter-files.s3.amazonaws.com/web/direct-files/185144cc47ab362c1b3ce2969c049bd8/fafdbff2-3b35-413d-a213-a9a83bba710d/pdf_4d900d97.pdf" target="_blank">Download PDF Guide</a></li>
+                        <li><a href="#" onclick="showSection('community')">Join Community</a></li>
+                        <li><a href="#" onclick="startAssessment()">Take Assessment</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>About IIT Bombay</h4>
+                    <p>Premier institute fostering innovation and entrepreneurship among students with world-class resources and mentorship.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
