@@ -1,4 +1,8 @@
-// Application data
+const showComingSoon = true; // Toggle this to false for live site
+
+if (showComingSoon) {
+  window.location.href = "comingsoon.html";
+}
 const sectionsData = {
   "discover": {
     "id": "discover",
