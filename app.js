@@ -1,4 +1,4 @@
-const showComingSoon = true; // Toggle this to false for live site
+const showComingSoon = false; // Toggle this to false for live site
 
 if (showComingSoon) {
   window.location.href = "comingsoon.html";
@@ -14,25 +14,25 @@ const sectionsData = {
         "name": "E-Cell Orientation Sessions",
         "type": "awareness",
         "description": "Introduction to entrepreneurship culture at IIT Bombay",
-        "contact": "ecell@iitb.ac.in"
+        "contact": "[E-Mail]"
       },
       {
         "name": "EnB Club Meet & Greet",
         "type": "awareness",
         "description": "Networking events for aspiring entrepreneurs",
-        "contact": "enb@iitb.ac.in"
+        "contact": "[E-Mail]"
       },
       {
         "name": "Entrepreneurial Mindset Assessment",
         "type": "assessment",
         "description": "Evaluate your entrepreneurial potential and interests",
-        "contact": "assessment@iitb.ac.in"
+        "contact": "[E-Mail]"
       },
       {
         "name": "IIT Bombay Startup Success Stories",
         "type": "inspiration",
         "description": "Learn from successful alumni entrepreneurs",
-        "contact": "stories@iitb.ac.in"
+        "contact": "[E-Mail]"
       }
     ]
   },
@@ -46,25 +46,25 @@ const sectionsData = {
         "name": "DSSE Entrepreneurship Courses",
         "type": "course",
         "description": "Comprehensive academic programs in entrepreneurship",
-        "contact": "dsse@iitb.ac.in"
+        "contact": "[E-Mail]"
       },
       {
         "name": "Design Thinking (DE250)",
         "type": "course",
         "description": "Mandatory course on design thinking and innovation",
-        "contact": "de250@iitb.ac.in"
+        "contact": "[E-Mail]"
       },
       {
         "name": "MakerSpace 101 Training",
         "type": "workshop",
         "description": "Learn to use fabrication tools and equipment",
-        "contact": "makerspace@iitb.ac.in"
+        "contact": "[E-Mail]"
       },
       {
         "name": "Business Model Canvas Workshop",
         "type": "workshop",
         "description": "Framework for developing business models",
-        "contact": "workshops@iitb.ac.in"
+        "contact": "[E-Mail]"
       }
     ]
   },
@@ -78,25 +78,25 @@ const sectionsData = {
         "name": "IDEAS Program",
         "type": "program",
         "description": "3-level pre-incubation program with alumni mentorship",
-        "contact": "ideas@iitb.ac.in"
+        "contact": "[E-Mail]"
       },
       {
         "name": "Proof-of-Concept Lab",
         "type": "facility",
         "description": "Fully equipped lab for prototype development",
-        "contact": "poclab@iitb.ac.in"
+        "contact": "[E-Mail]"
       },
       {
         "name": "Tinkerers' Laboratory",
         "type": "facility",
         "description": "24x7 student-run makerspace for innovation",
-        "contact": "tinkerers@iitb.ac.in"
+        "contact": "[E-Mail]"
       },
       {
         "name": "Eureka! Competition",
         "type": "competition",
         "description": "Asia's largest business plan competition",
-        "contact": "eureka@iitb.ac.in"
+        "contact": "[E-Mail]"
       }
     ]
   },
@@ -110,25 +110,25 @@ const sectionsData = {
         "name": "SINE Incubation",
         "type": "incubation",
         "description": "Technology business incubator with comprehensive support",
-        "contact": "sine@iitb.ac.in"
+        "contact": "[E-Mail]"
       },
       {
         "name": "Seed Funding Access",
         "type": "funding",
         "description": "Connect with investors and funding opportunities",
-        "contact": "funding@iitb.ac.in"
+        "contact": "[E-Mail]"
       },
       {
         "name": "Mentor Network",
         "type": "mentorship",
         "description": "Access to 100+ experienced entrepreneur mentors",
-        "contact": "mentors@iitb.ac.in"
+        "contact": "[E-Mail]"
       },
       {
         "name": "Office Space at SINE",
         "type": "infrastructure",
         "description": "Fully furnished office spaces for startups",
-        "contact": "space@iitb.ac.in"
+        "contact": "[E-Mail]"
       }
     ]
   },
@@ -142,25 +142,25 @@ const sectionsData = {
         "name": "Alumni Entrepreneur Network",
         "type": "network",
         "description": "Connect with 68,000+ IIT Bombay alumni worldwide",
-        "contact": "alumni@iitb.ac.in"
+        "contact": "[E-Mail]"
       },
       {
         "name": "TIH Research Collaborations",
         "type": "research",
         "description": "Technology Innovation Hub partnerships",
-        "contact": "tih@iitb.ac.in"
+        "contact": "[E-Mail]"
       },
       {
         "name": "ASPIRE Research Park",
         "type": "partnership",
         "description": "Industry collaboration opportunities",
-        "contact": "aspire@iitb.ac.in"
+        "contact": "[E-Mail]"
       },
       {
         "name": "International Exchanges",
         "type": "program",
         "description": "Global entrepreneurship and innovation programs",
-        "contact": "international@iitb.ac.in"
+        "contact": "[E-Mail]"
       }
     ]
   }
