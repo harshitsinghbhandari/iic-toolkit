@@ -69,35 +69,10 @@
 <body>
   <div class="container">
     <h1>Coming Soon</h1>
-    <p>We're working hard to bring something amazing. Stay tuned!</p>
-
-    <div id="countdown">00d : 00h : 00m : 00s</div>
-
-    <div>
-      <input type="email" placeholder="Enter your email">
-      <button>Notify Me</button>
-    </div>
+    <p>Coming up in a couple days to bring something amazing. Stay tuned!</p>
   </div>
 
   <script>
-    // Countdown (example: 30 days from now)
-    const targetDate = new Date();
-    targetDate.setDate(targetDate.getDate() + 30);
-
-    function updateCountdown() {
-      const now = new Date();
-      const diff = targetDate - now;
-
-      const days = Math.floor(diff / (1000 * 60 * 60 * 24));
-      const hours = Math.floor((diff / (1000 * 60 * 60)) % 24);
-      const minutes = Math.floor((diff / (1000 * 60)) % 60);
-      const seconds = Math.floor((diff / 1000) % 60);
-
-      document.getElementById("countdown").textContent =
-        `${days}d : ${hours}h : ${minutes}m : ${seconds}s`;
-    }
-
-    setInterval(updateCountdown, 1000);
   </script>
 </body>
 </html>
